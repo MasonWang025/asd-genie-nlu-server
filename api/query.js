@@ -2,8 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    q = req.query.q
+router.post("/", (req, res) => {
+    q = req.body.q
 
     if (q == '')
         req.json({

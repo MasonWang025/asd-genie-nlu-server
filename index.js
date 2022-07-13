@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.get("/", (req, res) => res.render("index")); //homepage route
 
 // members api routes
-app.use("/query", require("./api/query"));
+app.use("/en-US/query", require("./api/query"));
 
 app.listen(PORT, () => {
     console.log(`Server started on port ${PORT}`);
